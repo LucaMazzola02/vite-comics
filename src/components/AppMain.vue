@@ -18,49 +18,56 @@ export default {
         </div>
         <div class="main-bottom">
             <div class="container flex">
-                <section>
+                <div class="sections">
+                   <section>
                     <h2>DC COMICS</h2>
                     <ul>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
+                        <li>Characters</li>
+                        <li>Comics</li>
+                        <li>Movies</li>
+                        <li>TV</li>
+                        <li>Games</li>
+                        <li>Videos</li>
+                        <li>News</li>
                     </ul>
                     <h2>SHOP</h2>
                     <ul>
-                        <li>shop</li>
-                        <li>shop</li>
+                        <li>Shop DC</li>
+                        <li>Shop DC Collectibles</li>
                     </ul>
                 </section>
                 <section>
-                    <h2>DC COMICS</h2>
+                    <h2>DC</h2>
                     <ul>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
+                        <li>Terms Of Use</li>
+                        <li>Privacy policy(New)</li>
+                        <li>Ad Choices</li>
+                        <li>Advertising</li>
+                        <li>Jobs</li>
+                        <li>Subscriptions</li>
+                        <li>Talent Workshops</li>
+                        <li>CPSC Certificates</li>
+                        <li>Ratings</li>
+                        <li>Shop Help</li>
+                        <li>Contact Us</li>
                     </ul>
                 </section>
                 <section>
-                    <h2>DC COMICS</h2>
+                    <h2>SITES</h2>
                     <ul>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
-                        <li>characters</li>
+                        <li>DC</li>
+                        <li>MAD Magazine</li>
+                        <li>MAD Kids</li>
+                        <li>DC Universe</li>
+                        <li>DC Power Visa</li>
                     </ul>
                     
-                </section>
+                </section> 
+                </div>
+                <div class="main-logo">
+                    <img src="../assets/img/dc-logo-bg.png" alt="main logo image">
+                </div>
+                
                 
             </div>
         </div>
@@ -87,6 +94,7 @@ export default {
     }
 
     .main-bottom{
+        display: flex;
         height: 400px;
         background-image: url(../assets/img/footer-bg.jpg);
 
@@ -104,15 +112,23 @@ export default {
             color: #9c9c9c;
             font-size: .8rem;
             margin-bottom: 0.4rem;
+            transition: all .3s cubic-bezier(.215, .61, .355, 1);
+        }
+        section ul li:hover{
+            color: $colorText;
         }
 
     }
+    .sections{display: flex;}
 
+    .main-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 12%;
+    }
+    .main-logo img{
+        width: 400px;
 
-
-
-
-
-
-
+    }
 </style>
