@@ -38,7 +38,7 @@ export default {
     @use '../styles/partials/variables' as *;
 
 footer{
-    background-color: $footerColor;
+    background-color: $bgColor;
     
     & .container{
         height: 100px;
@@ -50,7 +50,7 @@ footer{
 .footer-left button{
     border: 2.5px solid $primaryColor;
     padding: 7px 12px;
-    background-color: $footerColor;
+    background-color: $bgColor;
     color: $colorText;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 
